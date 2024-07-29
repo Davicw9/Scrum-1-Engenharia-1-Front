@@ -60,6 +60,9 @@ hr{
     background-color: #ffffff;
     font-size: 20px;
 }
+#btnGoogle:hover{
+    background-color: #eeeaea;
+}
 #texto{
     width: 90%;
     text-align: center;
@@ -74,6 +77,7 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 a{
     text-decoration: none;
