@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Product Backlog Items</title>
+    <link rel="stylesheet" href="styles/homeSprintBacklog-style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="newSprintBacklogScreen.html">Novo Sprint Backlog</a>
+        <a href="sprintBacklogScreen.html">Novo Sprint Backlog Itens</a>
+    </div>
+
+    <div class="container">
+        <h1>View Backlog Items</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="backlogId">Sprint Backlog ID</label>
+                <input type="number" id="backlogId" name="backlogId" required>
+            </div>
+            <button type="submit">Search</button>
+        </form>
+
+        <div id="backlogItemsContainer">
+            <h2>Backlog Items</h2>
+            <ul id="backlogItemsList"></ul>
+        </div>
+    </div>
+
+    
+</body>
+</html>
