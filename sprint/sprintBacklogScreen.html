@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Sprint Backlog</title>
+    <link rel="stylesheet" href="styles/SprintBacklogScreen-style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="newSprintBacklogScreen.html">Nova Sprint Backlog</a>
+        <a href="homeSprintBacklogScreen.html">Ver Sprint Backlog</a>
+    </div>
+
+    <div class="container">
+        <h1>Create New Sprint item Backlog</h1>
+        <form id="productBacklogForm">
+            <div class="form-group">
+                <label for="title">Encarregado</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group"></div>
+                <label for="Prioridade">Prioridade</label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <button type="submit">Create Backlog</button>
+        </form>
+        <div id="resultMessage"></div>
+    </div>
+
+</body>
+</html>
