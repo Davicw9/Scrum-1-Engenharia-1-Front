@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Product Backlog Items</title>
-    <link rel="stylesheet" href="styles/homeProductBacklog-style.css">
+    <title>Ver Backlog</title>
+    <link rel="stylesheet" href="styles/viewProductBacklog-style.css">
 </head>
 <body>
     <div class="header">
-        <a href="productBacklogScreen.html">Novo Product Backlog</a>
-        <a href="newProductBacklogScreen.html">Novo Product Backlog Itens</a>
+        <a href="productBacklogScreen.html">Novo Backlog</a>
+        <a href="addProductBacklogItemScreen.html">Adicionar itens</a>
     </div>
 
     <div class="container">
-        <h1>View Backlog Items</h1>
+        <h1>Ver Backlog</h1>
         <form id="searchForm">
             <div class="form-group">
                 <label for="backlogId">Product Backlog ID</label>
                 <input type="number" id="backlogId" name="backlogId" required>
             </div>
-            <button type="submit">Search</button>
+            <button type="submit">Buscar</button>
         </form>
 
         <div id="backlogItemsContainer">
-            <h2>Backlog Items</h2>
+            <h2>Itens do Backlog</h2>
             <ul id="backlogItemsList"></ul>
         </div>
     </div>
 
-    <script src="scripts/homeProductBacklog-script.js"></script>
+    <script src="scripts/viewProductBacklog-script.js"></script>
 </body>
 </html>
