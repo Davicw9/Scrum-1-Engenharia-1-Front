@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product Backlog Item</title>
+    <link rel="stylesheet" href="styles/newSprintBacklogScreen-style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="sprintBacklogScreen.html">item Novo Sprint Backlog</a>
+        <a href="homeSprintBacklogScreen.html">Ver Sprint Backlog</a>
+    </div>
+
+    <div class="container">
+        <h1>Add Sprint</h1>
+        <form id="backlogItemForm">
+            <div class="form-group">
+                <label for="description">Nome da Sprint</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">End Date</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="backlogId">Responsavel</label>
+                <input type="text" id="backlogId" name="backlogId" required>
+            </div>
+            <button type="submit">Add Item</button>
+        </form>
+        <div id="resultMessage"></div>
+    </div>
+
+</body>
+</html>

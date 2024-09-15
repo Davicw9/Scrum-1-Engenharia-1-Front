@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Item ao Backlog</title>
+    <link rel="stylesheet" href="styles/addProductBacklogItemScreen-style.css">
+</head>
+<body>
+    <div class="header">
+        <a href="productBacklogScreen.html">Novo Backlog</a>
+        <a href="viewProductBacklog.html">Ver Backlog</a>
+    </div>
+
+    <div class="container">
+        <h1>Adicionar item ao Backlog</h1>
+        <form id="backlogItemForm">
+            <div class="form-group">
+                <label for="description">Descrição</label>
+                <textarea id="description" name="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="startDate">Data inicial</label>
+                <input type="date" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">Data final</label>
+                <input type="date" id="endDate" name="endDate" required>
+            </div>
+            <div class="form-group">
+                <label for="backlogId">Product Backlog ID</label>
+                <input type="number" id="backlogId" name="backlogId" required>
+            </div>
+            <button type="submit">Adicionar item</button>
+        </form>
+        <div id="resultMessage"></div>
+    </div>
+
+    <script src="scripts/addProductBacklogItem-script.js"></script>
+</body>
+</html>

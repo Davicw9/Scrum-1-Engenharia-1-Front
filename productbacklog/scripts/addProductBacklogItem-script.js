@@ -28,10 +28,10 @@ document.getElementById('backlogItemForm').addEventListener('submit', function(e
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById('resultMessage').innerText = 'Backlog Item added successfully!';
+        document.getElementById('resultMessage').innerText = 'Backlog Item adicionado com sucesso!';
     })
     .catch((error) => {
-        document.getElementById('resultMessage').innerText = 'Error adding Backlog Item!';
+        document.getElementById('resultMessage').innerText = 'Erro ao adicionar Backlog Item!';
         console.error('Error:', error);
     });
 });
