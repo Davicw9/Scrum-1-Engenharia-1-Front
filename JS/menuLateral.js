@@ -13,5 +13,8 @@ document.getElementById('div-x').addEventListener
 document.getElementById('sair').addEventListener
 ('click', function(event){
     event.preventDefault();
-    window.location.href = 'index.html'
+    localStorage.removeItem('token');
+    localStorage.removeItem('authUsername');
+    localStorage.removeItem('authUsername');
+    window.location.href = 'index.html';
 })

@@ -331,3 +331,13 @@ body {
     text-align: center;
     cursor: pointer;
 }
+#btn-excluir{
+    background-color: #c20e0e;
+    width: 170px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
