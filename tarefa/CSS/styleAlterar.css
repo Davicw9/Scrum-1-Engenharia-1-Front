@@ -1,0 +1,54 @@
+
+.hidden {
+    display: none;
+}
+
+/* Formulários de tarefa */
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.task-form label {
+    font-weight: bold;
+}
+
+.task-form input, .task-form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.btn-create, .btn-edit {
+    background-color: #65558F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-create:hover, .btn-edit:hover {
+    background-color: #4d3f6b;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 10px;
+    }
+}
