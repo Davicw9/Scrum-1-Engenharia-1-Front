@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprints</title>
+    <link rel="stylesheet" href="../CSS/styleComentarios.css">
+    <link rel="stylesheet" href="../CSS/styleCriartarefas.css">
+    <link rel="stylesheet" href="../CSS/styleAlterar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <h1>Scrum</h1>
+            </div>
+            <div class="menu">
+                <!-- Botões de navegação -->
+                <button class="menu-btn active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                    </svg>
+                    <span>Sprints</span>
+                </button>
+                <button class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
+                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                    </svg>
+                    <span>Chat</span>
+                </button>
+                <button class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                        <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                    </svg>
+                    <span>Spaces</span>
+                </button>
+                <button class="menu-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
+                    </svg>
+                    <span>Meet</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sprints-tasks">
+                <div class="sprints-list">
+                    <div class="top-bar"></div>
+                    <div class="search-wrapper">
+                        <input type="text" class="search-input" placeholder="Buscar...">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </div>
+                    <h3>Minhas Sprints</h3>
+                    <ul id="sprints-list" class="empty-message">
+                        <li>Sem sprints</li>
+                    </ul>
+                </div>
+
+                <div class="tasks-table">
+                    <h3>Tarefas</h3>
+                    <table>
+                        <div class="empty-table">
+                            <!-- Botão para adicionar uma nova tarefa -->
+                            <button class="btn-new-task" onclick="showTaskForm()">Nova Tarefa</button>
+                        </div>
+                        
+                        <!-- Formulário de Criação de Nova Tarefa -->
+                        <div id="taskForm" class="task-form hidden">
+                            <h3>Criar Nova Tarefa</h3>
+                            <form>
+                                <!-- Campo para nome da tarefa -->
+                                <label for="task-name">Nome da Tarefa:</label>
+                                <input type="text" name="task-name" id="task-name">
+                                
+                                <!-- Campo para descrição da tarefa -->
+                                <label for="task-desc">Descrição:</label>
+                                <textarea name="task-desc" id="task-desc"></textarea>
+                        
+                                <!-- Campo para responsável pela tarefa -->
+                                <label for="task-responsible">Responsável:</label>
+                                <input type="text" name="task-responsible" id="task-responsible">
+                        
+                                <!-- Campo para prioridade da tarefa -->
+                                <label for="task-priority">Prioridade:</label>
+                                <input type="text" id="task-priority" name="task-priority">                                
+                        
+                                <!-- Campo para data de início da tarefa -->
+                                <label for="task-start">Início:</label>
+                                <input type="date" name="task-start" id="task-start">
+                        
+                                <!-- Campo para data de término da tarefa -->
+                                <label for="task-end">Fim:</label>
+                                <input type="date" name="task-end" id="task-end">
+                        
+                                <!-- Botão para criar a tarefa -->
+                                <button type="button" class="btn-create-task">Criar</button>
+                            </form>
+                        </div>
+                            <tr>
+                                <td>
+                                    <span class="message">Nenhuma tarefa encontrada</span>
+                                </td>
+                            </tr>
+                        </div>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Descrição</th>
+                                <th>Responsável</th>
+                                <th>Prioridade</th>
+                                <th>Início</th>
+                                <th>Fim</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tasks-table-body">
+                            <!-- Tarefas serão carregadas aqui -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+                        <!-- Formulário de Alteração de Tarefa -->
+<div id="form-editar-tarefa" class="edit-form hidden">
+    <h3>Alterar Tarefa</h3>
+    <form id="editar-form">
+        <label for="edit-task-name">Nome da Tarefa:</label>
+        <input type="text" id="edit-task-name" name="edit-task-name">
+
+        <label for="edit-task-desc">Descrição:</label>
+        <textarea id="edit-task-desc" name="edit-task-desc"></textarea>
+
+        <label for="edit-task-responsible">Responsável:</label>
+        <input type="text" id="edit-task-responsible" name="edit-task-responsible">
+
+        <label for="edit-task-priority">Prioridade:</label>
+        <input type="text" id="edit-task-priority" name="edit-task-priority">
+
+        <label for="edit-task-start">Início:</label>
+        <input type="date" id="edit-task-start" name="edit-task-start">
+
+        <label for="edit-task-end">Fim:</label>
+        <input type="date" id="edit-task-end" name="edit-task-end">
+
+        <button type="button" class="btn-save-task">Salvar Alteração</button>
+    </form>
+</div>
+                    </div>
+
+
+            <div id="comments-section">
+                <div id="comments-new-task-id" class="comments-div" style="display:none;">
+                    <h4>Comentários para Nome da Tarefa</h4>
+                    <ul id="comments-list-new-task-id">
+                        <!-- Comentários aparecem aqui -->
+                    </ul>
+                    <textarea id="new-comment-new-task-id" placeholder="Adicionar comentário..."></textarea>
+                    <button onclick="addComment('new-task-id')">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../JS/scriptCriarTarefa.js"></script>
+    <script src="../JS/script.js"></script>
+    <script src="../JS/scriptAlterarTarefa.js"></script>
+    
+</body>
+</html>

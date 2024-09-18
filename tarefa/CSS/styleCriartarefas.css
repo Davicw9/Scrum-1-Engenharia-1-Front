@@ -1,0 +1,106 @@
+/* Botão Nova Tarefa */
+.btn-new-task {
+    background-color: #65558F; /* Cor de fundo do botão */
+    color: white; /* Cor do texto no botão */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 18px; /* Tamanho da fonte do texto no botão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do botão */
+    transition: background-color 0.3s ease; /* Animação suave na alteração da cor de fundo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao botão */
+}
+
+.btn-new-task:hover {
+    background-color: #544CBB; /* Cor de fundo alterada quando o botão é hovered */
+}
+
+/* Formulário de criar tarefa */
+.task-form {
+    background-color: #DACFF8; /* Cor de fundo do formulário */
+    padding: 25px 30px; /* Espaçamento interno do formulário */
+    border-radius: 12px; /* Arredonda os cantos do formulário */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave ao formulário */
+    display: none; /* Oculta o formulário por padrão */
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+}
+
+.task-form h3 {
+    color: #65558F; /* Cor do texto do título */
+    font-size: 24px; /* Tamanho da fonte do título */
+    font-weight: 600; /* Deixa o título em semi-negrito */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.task-form label {
+    display: block; /* Exibe o rótulo como um bloco para ocupar toda a largura disponível */
+    margin-bottom: 8px; /* Espaçamento abaixo do rótulo */
+    font-weight: 600; /* Deixa o texto do rótulo em semi-negrito */
+    color: #4A4A4A; /* Cor do texto do rótulo */
+    font-size: 14px; /* Tamanho da fonte do texto do rótulo */
+}
+
+.task-form input, 
+.task-form textarea {
+    width: 100%; /* Largura total dos campos de entrada e área de texto */
+    padding: 12px; /* Espaçamento interno dos campos */
+    margin-bottom: 20px; /* Espaçamento abaixo dos campos */
+    border: 1px solid #ccc; /* Borda padrão dos campos */
+    border-radius: 8px; /* Arredonda os cantos dos campos */
+    font-family: 'Poppins', sans-serif; /* Define a fonte usada nos campos */
+    font-size: 14px; /* Tamanho da fonte nos campos */
+    box-sizing: border-box; /* Inclui o padding e border no cálculo da largura total do campo */
+    transition: border-color 0.3s ease; /* Animação suave na alteração da cor da borda */
+}
+
+.task-form input:focus, 
+.task-form textarea:focus {
+    border-color: #65558F; /* Cor da borda quando o campo está em foco */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+.task-form textarea {
+    resize: vertical; /* Permite redimensionar verticalmente a área de texto */
+    min-height: 100px; /* Define a altura mínima da área de texto */
+}
+
+/* Botão de criar tarefa */
+.task-form .btn-create-task {
+    background-color: #65558F; /* Cor de fundo do botão */
+    color: white; /* Cor do texto no botão */
+    padding: 12px 24px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte do texto no botão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    transition: background-color 0.3s ease; /* Animação suave na alteração da cor de fundo */
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    width: 100%; /* Largura total do botão */
+    margin-top: 10px; /* Espaçamento acima do botão */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao botão */
+}
+
+.task-form .btn-create-task:hover {
+    background-color: #544CBB; /* Cor de fundo alterada quando o botão é hovered */
+}
+
+/* Exibir o formulário quando acionado */
+.task-form.show {
+    display: block; /* Torna o formulário visível quando a classe "show" é adicionada */
+}
+
+/* Ajuste da responsividade */
+@media (max-width: 768px) {
+    .task-form {
+        max-width: 90%; /* Largura máxima do formulário em telas pequenas */
+        padding: 20px; /* Espaçamento interno reduzido em telas pequenas */
+    }
+    
+    .btn-new-task {
+        width: 100%; /* Largura total do botão em telas pequenas */
+    }
+}

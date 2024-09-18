@@ -1,0 +1,291 @@
+/* Ajustes gerais */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão para a página */
+    background-color: #F9F9FF; /* Cor de fundo geral da página */
+    margin: 0; /* Remove as margens padrão do corpo */
+}
+
+.container {
+    display: flex; /* Utiliza flexbox para organizar os elementos internos */
+    height: 100vh; /* Define a altura do container para 100% da altura da viewport */
+}
+
+/* Estilização da Sidebar */
+.sidebar {
+    width: 80px; /* Largura da sidebar */
+    background-color: #FDF7FF; /* Cor de fundo da sidebar */
+    padding: 20px 0; /* Espaçamento interno para centralizar verticalmente */
+    display: flex; /* Utiliza flexbox para organizar os itens internos */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao lado da sidebar */
+}
+
+.sidebar .logo h1 {
+    font-size: 20px; /* Tamanho da fonte do logo */
+    color: #28234A; /* Cor do texto do logo */
+    margin-bottom: 30px; /* Espaçamento abaixo do logo */
+}
+
+.sidebar .menu {
+    display: flex; /* Utiliza flexbox para organizar os itens do menu */
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Largura total do menu */
+}
+
+.sidebar .menu-btn {
+    display: flex; /* Utiliza flexbox para organizar o ícone e o texto */
+    flex-direction: column; /* Coloca ícone e texto em coluna */
+    align-items: center; /* Centraliza o ícone e o texto */
+    justify-content: center; /* Centraliza o ícone e o texto verticalmente */
+    padding: 10px; /* Espaçamento interno do botão do menu */
+    margin-bottom: 15px; /* Espaçamento abaixo do botão do menu */
+    width: 100%; /* Largura total do botão do menu */
+    background-color: #F1ECFF; /* Cor de fundo do botão do menu */
+    color: #454545; /* Cor do texto do botão do menu */
+    border-radius: 10px; /* Arredonda os cantos do botão do menu */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre o botão */
+    font-size: 14px; /* Tamanho da fonte do texto do botão do menu */
+    transition: background-color 0.3s; /* Animação suave na alteração da cor de fundo */
+}
+
+.sidebar .menu-btn.active {
+    background-color: #FFCEEA; /* Cor de fundo quando o botão do menu está ativo */
+    color: #28234A; /* Cor do texto quando o botão do menu está ativo */
+}
+
+.sidebar .menu-btn i {
+    font-size: 24px; /* Tamanho do ícone */
+    margin-bottom: 5px; /* Espaçamento entre o ícone e o texto */
+}
+
+.sidebar .menu-btn:hover {
+    background-color: #E9E3FF; /* Cor de fundo quando o botão do menu é hovered */
+}
+
+.sidebar .menu-btn span {
+    font-size: 12px; /* Tamanho menor do texto no botão do menu */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Área de conteúdo principal */
+.main-content {
+    flex: 1; /* Faz a área de conteúdo ocupar o espaço restante */
+    padding: 20px; /* Espaçamento interno da área de conteúdo */
+    background-color: #FAF9FF; /* Cor de fundo da área de conteúdo */
+}
+
+.sprints-tasks {
+    display: flex; /* Utiliza flexbox para organizar a lista de sprints e a tabela de tarefas */
+    gap: 30px; /* Espaçamento entre a lista de sprints e a tabela de tarefas */
+}
+
+/* Seção da lista de sprints */
+.sprints-list {
+    flex: 0 0 250px; /* Define a largura fixa para a lista de sprints */
+    background-color: #FDF7FF; /* Cor de fundo da lista de sprints */
+    padding: 20px; /* Espaçamento interno da lista de sprints */
+    border-radius: 15px; /* Arredonda os cantos da lista de sprints */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à lista de sprints */
+}
+
+.sprints-list h3 {
+    color: #544CBB; /* Cor do texto do título da lista de sprints */
+    font-size: 20px; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.sprints-list ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+.sprints-list .sprint-item {
+    display: flex; /* Utiliza flexbox para organizar os itens da lista */
+    justify-content: space-between; /* Espaça os itens da lista */
+    padding: 10px; /* Espaçamento interno dos itens da lista */
+    margin-bottom: 10px; /* Espaçamento abaixo dos itens da lista */
+    background-color: #FFF; /* Cor de fundo dos itens da lista */
+    border-radius: 10px; /* Arredonda os cantos dos itens da lista */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Adiciona uma sombra sutil aos itens da lista */
+    cursor: pointer; /* Altera o cursor para uma mão ao passar sobre os itens */
+}
+
+.sprints-list .sprint-item.active {
+    background-color: #544CBB; /* Cor de fundo quando o item da lista está ativo */
+    color: #FFF; /* Cor do texto quando o item da lista está ativo */
+}
+
+.sprints-list .sprint-item:hover {
+    background-color: #544CBB; /* Cor de fundo quando o item da lista é hovered */
+    color: #FFF; /* Cor do texto quando o item da lista é hovered */
+}
+
+.sprints-list .sprint-name {
+    font-size: 16px; /* Tamanho da fonte do nome do sprint */
+    font-weight: 600; /* Deixa o texto do nome do sprint em semi-negrito */
+}
+
+.sprints-list .sprint-time {
+    font-size: 14px; /* Tamanho da fonte do tempo do sprint */
+    color: #9A9A9A; /* Cor do texto do tempo do sprint */
+}
+
+/* Tabela de tarefas */
+.tasks-table {
+    flex: 1; /* Faz a tabela de tarefas ocupar o espaço restante */
+    background-color: #FDF7FF; /* Cor de fundo da tabela de tarefas */
+    padding: 20px; /* Espaçamento interno da tabela de tarefas */
+    border-radius: 15px; /* Arredonda os cantos da tabela de tarefas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra à tabela de tarefas */
+}
+
+.tasks-table table {
+    width: 100%; /* Largura total da tabela */
+    border-collapse: collapse; /* Remove espaçamentos entre as células da tabela */
+}
+
+.tasks-table th, .tasks-table td {
+    padding: 10px; /* Espaçamento interno das células da tabela */
+    text-align: left; /* Alinha o texto à esquerda nas células da tabela */
+}
+
+.tasks-table th {
+    background-color: #E9E3FF; /* Cor de fundo dos cabeçalhos das colunas */
+    color: #454545; /* Cor do texto dos cabeçalhos das colunas */
+    font-weight: 600; /* Deixa o texto dos cabeçalhos em semi-negrito */
+}
+
+.tasks-table td {
+    background-color: #FFF; /* Cor de fundo das células da tabela */
+    color: #454545; /* Cor do texto das células da tabela */
+    border-bottom: 1px solid #EAEAEA; /* Borda inferior das células da tabela */
+}
+
+.tasks-table img {
+    width: 30px; /* Largura das imagens na tabela */
+    height: 30px; /* Altura das imagens na tabela */
+    border-radius: 50%; /* Torna as imagens circulares */
+    margin-right: 10px; /* Espaçamento à direita das imagens */
+}
+
+.tasks-table .responsavel {
+    display: flex; /* Utiliza flexbox para organizar o responsável */
+    align-items: center; /* Alinha o responsável verticalmente */
+}
+
+/* Seção de comentários (oculta por padrão) */
+/* Estilo para o botão Enviar comentário */
+.comment-section #send-comment-btn {
+    background-color: #65558F;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section #send-comment-btn:hover {
+    background-color: #544CBB;
+}
+
+/* Estilo para a lista de comentários */
+.comment-section #comments-list {
+    margin-top: 20px;
+}
+
+.comment-section .comment-item {
+    padding: 10px;
+    border-bottom: 1px solid #EAEAEA;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+
+
+.top-bar {
+    display: flex; /* Utiliza flexbox para organizar a barra superior */
+    justify-content: flex-end; /* Alinha os itens ao final da barra */
+    margin-bottom: 20px; /* Espaçamento abaixo da barra superior */
+}
+
+.search-wrapper {
+    position: relative; /* Define a posição relativa para o wrapper de busca */
+    display: flex; /* Utiliza flexbox para organizar o campo de busca */
+    align-items: center; /* Alinha o campo de busca verticalmente */
+}
+
+.search-input {
+    padding: 10px 40px 10px 20px; /* Espaçamento interno do campo de busca */
+    border-radius: 30px; /* Arredonda os cantos do campo de busca */
+    border: 1px solid #ccc; /* Borda do campo de busca */
+    width: 200px; /* Largura do campo de busca */
+    background-color: #dfd2f1; /* Cor de fundo do campo de busca */
+}
+
+.search-icon {
+    position: absolute; /* Define a posição absoluta para o ícone de busca */
+    right: 15px; /* Alinha o ícone à direita */
+    font-size: 20px; /* Tamanho da fonte do ícone de busca */
+    color: #888; /* Cor do ícone de busca */
+}
+
+/* Estilização da área de comentários */
+.comments-div {
+    background-color: #dfd2f1;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização do botão de comentários */
+button.comment-btn, button.send-comment-btn {
+    background-color: #65558F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para os botões */
+button.comment-btn:hover, button.send-comment-btn:hover {
+    background-color: #4e3e6d;
+}
+
+/* Estilização do textarea para escrever o comentário */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+/* Estilização da lista de comentários */
+ul.comments-list {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização de cada comentário */
+ul.comments-list li {
+    background-color: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
